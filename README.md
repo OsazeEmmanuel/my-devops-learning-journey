@@ -68,3 +68,37 @@
 - Practiced user and group management scenarios
 - Explored permission-based access control
 - Strengthened command-line efficiency
+
+## 📅 Week 3: Linux System Management ⚙️
+
+### 🔄 Linux Process Management
+- Understanding processes and PID
+- Viewing processes (`ps`, `top`, `htop`)
+- Managing processes (`kill`, `killall`, `pkill`)
+- Background & foreground jobs (`&`, `jobs`, `fg`, `bg`)
+
+### 📁 Linux File System & Storage
+- Understanding Linux file system structure (`/`, `/home`, `/var`, `/etc`)
+- Disk usage (`df -h`, `du -sh`)
+- Virtual storage concepts
+- Mounting and unmounting storage (`mount`, `umount`)
+
+### 📦 Application Package Management
+- Package managers (`apt`, `dpkg`)
+- Installing, updating, removing packages
+- Package index update (`apt update`)
+- Upgrading system packages (`apt upgrade`)
+
+### 📚 Further Study
+- Explored package dependencies
+- Understood difference between `apt` and `dpkg`
+- Practiced troubleshooting package installation issues
+
+### 🧪 Practical Work
+- Monitored running processes
+- Killed unwanted processes
+- Checked disk usage and storage
+- Installed and removed applications using `apt`
+
+### 📝 Assessment 1
+- Completed first assessment covering Linux fundamentals
