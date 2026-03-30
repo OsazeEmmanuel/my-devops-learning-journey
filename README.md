@@ -185,3 +185,41 @@ Gained hands-on experience automating tasks and scheduling jobs in Linux.
 
 ---
 
+# 🟦 Week 6: Configuration Management – Ansible
+
+## 📌 Overview
+
+Learned how to automate system configuration and deployment using Ansible.
+
+---
+
+## 🧠 Key Concepts
+
+* Introduction to Ansible
+* Agentless architecture (SSH-based)
+* Inventory files
+* Ad-hoc commands
+* Playbooks and YAML syntax
+
+---
+
+## 🛠 Practice
+
+* Ran Ansible ad-hoc commands
+* Created simple playbooks
+* Managed remote servers via SSH
+
+---
+
+## 📊 Assessment
+
+* Completed **Assessment 2** on Ansible fundamentals and usage
+
+---
+
+## 🚀 Outcome
+
+Gained hands-on experience in automating configuration and managing servers using Ansible.
+
+---
+
