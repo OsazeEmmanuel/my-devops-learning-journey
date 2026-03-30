@@ -223,3 +223,55 @@ Gained hands-on experience in automating configuration and managing servers usin
 
 ---
 
+# 🟦 Week 7: Internet, Protocols & OSI Model
+
+## 📌 Overview
+
+Learned how the internet works, how devices communicate using protocols, and how data flows through the OSI model.
+
+---
+
+## 🧠 Key Concepts
+
+* Internet basics (DNS, IP, packets)
+* Client–server communication
+* Network protocols (HTTP, HTTPS, TCP, UDP)
+* OSI 7-layer model
+
+---
+
+## 🌐 How the Internet Works
+
+* Domain names are resolved to IP addresses using DNS
+* Data is sent as packets across networks
+* Servers process requests and return responses
+
+---
+
+## 🔌 Protocols
+
+* **HTTP/HTTPS** – web communication
+* **TCP** – reliable data transfer
+* **UDP** – fast but unreliable
+* **IP** – addressing and routing
+
+---
+
+## 🧱 OSI Model (7 Layers)
+
+1. Application
+2. Presentation
+3. Session
+4. Transport
+5. Network
+6. Data Link
+7. Physical
+
+---
+
+## 🚀 Outcome
+
+Gained a solid understanding of how internet communication works and how data moves across networks.
+
+---
+
