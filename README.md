@@ -160,3 +160,28 @@
 - Understood Linux service management with systemd
 - Gained hands-on experience with web server configuration
 - Improved system security awareness with firewall and benchmarks
+
+
+# 🟦 Week 5: Bash Scripting & Crontab
+
+## 📌 Overview
+
+Learned how to automate tasks in Linux using Bash scripts and schedule them with cron.
+
+---
+
+## 🧠 Key Concepts
+
+* Bash scripting basics
+* Variables and user input
+* Conditionals (`if`)
+* Loops (`for`, `while`)
+* Cron job scheduling
+
+
+## 🚀 Outcome
+
+Gained hands-on experience automating tasks and scheduling jobs in Linux.
+
+---
+
