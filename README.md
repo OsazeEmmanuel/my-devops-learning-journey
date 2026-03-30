@@ -1,4 +1,4 @@
-# DevOps Learning Journey 🚀
+# My DevOps Learning Journey at ALTSCHOOL AFRICA 🚀
 
 
 ## 📅 Week 1: Linux & Cloud Foundations
@@ -102,3 +102,61 @@
 
 ### 📝 Assessment 1
 - Completed first assessment covering Linux fundamentals
+
+
+## 📅 Week 4: Version Control & System Services 🔧
+
+### 🧰 Version Control (Git)
+- Introduction to Git and version control concepts
+- Understanding distributed version control systems
+
+### 🔄 Git Distribution, Commands & Workflow
+- Initializing repositories (`git init`)
+- Cloning repositories (`git clone`)
+- Staging changes (`git add`)
+- Committing changes (`git commit`)
+- Pushing to remote (`git push`)
+- Pulling updates (`git pull`)
+- Basic workflow: working directory → staging → commit → remote
+
+### 📖 Git Terms
+- Repository (repo)
+- Commit
+- Branch
+- Merge
+- Clone
+- Remote
+
+### ⚙️ SystemD
+- Understanding systemd as a service manager
+- Managing services (`systemctl start/stop/restart/status`)
+- Enabling and disabling services at boot
+
+### 🌐 Configuring Apache Service
+- Installing Apache (`apache2`)
+- Managing Apache with systemctl
+- Enabling Apache to start on boot
+- Restarting and checking service status
+
+### 🔐 CIS Security Benchmark
+- Introduction to CIS benchmarks
+- Importance of system hardening and security best practices
+- Basic system security awareness
+
+### 🔥 Linux Firewall
+- Understanding firewall concepts
+- Using `ufw` (Uncomplicated Firewall)
+- Allowing and denying ports
+- Enabling and checking firewall status
+
+### 🧪 Practical Work
+- Used Git for version control and pushed to GitHub
+- Managed services using systemctl
+- Installed and configured Apache server
+- Enabled and configured firewall rules
+
+### 🚀 Key Takeaways
+- Learned how to track and manage code changes using Git
+- Understood Linux service management with systemd
+- Gained hands-on experience with web server configuration
+- Improved system security awareness with firewall and benchmarks
