@@ -275,3 +275,229 @@ Gained a solid understanding of how internet communication works and how data mo
 
 ---
 
+
+### MY PERSONAL PROJECT ON ANSIBLE-ROLE ###
+# 🟦 Ansible Nginx Role-Based Web Server Setup
+
+## 📌 Overview
+
+This project demonstrates how to configure a web server using Ansible with an **industry-standard role-based structure**.
+
+It installs Nginx, deploys a dynamic HTML page using Jinja2 templates, and manages services using handlers.
+
+---
+
+## 🧠 Features
+
+* Role-based Ansible structure
+* Automated Nginx installation and configuration
+* Dynamic HTML deployment using templates
+* Service management with handlers
+* Reusable and scalable infrastructure setup
+
+---
+
+## 📂 Project Structure
+
+```bash
+ansible-project/
+│
+├── inventory.ini
+├── playbook.yml
+└── roles/
+    └── webserver/
+        ├── tasks/
+        │   └── main.yml
+        ├── handlers/
+        │   └── main.yml
+        ├── templates/
+        │   └── index.j2
+        ├── files/
+        ├── vars/
+        │   └── main.yml
+        └── defaults/
+            └── main.yml
+```
+
+---
+
+## 🛠 Setup Instructions
+
+### 1. Install Ansible
+
+```bash
+sudo apt update
+sudo apt install ansible -y
+```
+
+---
+
+### 2. Create Role Structure
+
+```bash
+ansible-galaxy init roles/webserver
+```
+
+---
+
+### 3. Configure Default Variables
+
+Edit:
+
+```bash
+roles/webserver/defaults/main.yml
+```
+
+```yaml
+page_title: "My Ansible Server"
+heading1: "🚀 Deployed with Ansible"
+heading2: "Welcome to my server"
+heading3: "Configured using Ansible roles"
+```
+
+---
+
+### 4. Create HTML Template
+
+Edit:
+
+```bash
+roles/webserver/templates/index.j2
+```
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ page_title }}</title>
+</head>
+<body>
+    <h1>{{ heading1 }}</h1>
+    <h2>{{ heading2 }}</h2>
+    <h3>{{ heading3 }}</h3>
+</body>
+</html>
+```
+
+---
+
+### 5. Define Tasks
+
+Edit:
+
+```bash
+roles/webserver/tasks/main.yml
+```
+
+```yaml
+- name: Update apt cache
+  apt:
+    update_cache: yes
+
+- name: Install nginx
+  apt:
+    name: nginx
+    state: present
+
+- name: Start nginx
+  service:
+    name: nginx
+    state: started
+    enabled: yes
+
+- name: Deploy HTML template
+  template:
+    src: index.j2
+    dest: /var/www/html/index.html
+  notify: restart nginx
+```
+
+---
+
+### 6. Configure Handlers
+
+Edit:
+
+```bash
+roles/webserver/handlers/main.yml
+```
+
+```yaml
+- name: restart nginx
+  service:
+    name: nginx
+    state: restarted
+```
+
+---
+
+### 7. Create Main Playbook
+
+```bash
+nano playbook.yml
+```
+
+```yaml
+- name: Configure Web Server
+  hosts: web
+  become: yes
+
+  roles:
+    - webserver
+```
+
+---
+
+### 8. Configure Inventory
+
+```ini
+#[web]
+your-server-ip ansible_user=root ansible_ssh_private_key_file=~/.ssh/id_rsa
+```
+
+---
+
+### 9. Run the Playbook
+
+```bash
+ansible-playbook -i inventory.ini playbook.yml
+```
+
+---
+
+## 🌐 Result
+
+After execution, open:
+
+```
+http://my-server-ip
+```
+
+You should see a dynamically generated web page deployed via Ansible.
+
+---
+
+## 🎯 What This Project Demonstrates
+
+* Infrastructure as Code (IaC) using Ansible
+* Role-based configuration management
+* Template-driven deployments
+* Service automation and orchestration
+
+---
+
+## 🔥 These are the Future Improvements i will be making
+
+* Add firewall configuration (UFW role)
+* Support multiple environments (dev/prod)
+* Integrate CI/CD pipeline
+* Add monitoring and logging
+
+---
+
+## 🚀 My One-Line Summary
+
+> This project uses Ansible roles to automate Nginx installation and deploy a dynamic web page in a clean, reusable DevOps structure.
+
+---
+
